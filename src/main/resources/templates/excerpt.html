@@ -8,21 +8,36 @@
 <style>
     .excerptContainer {
         display: flex;
-        flex-direction: row;
+        justify-content: flex-start;
         margin-top: 1rem;
     }
 
-    .excerptText {
-        padding-left: 1rem;
+    @media (max-width: 600px) {
+        .excerptContainer {
+            flex-direction: column;
+        }
     }
 
-    .excerptText h3 {
-        margin-top: 0;
+    @media (min-width: 601px) {
+        .excerptContainer {
+            flex-direction: row;
+        }
+        .excerptImage {
+            flex: 0 0 225px;
+        }
+        .excerptText {
+            padding-left: 1rem;
+        }
+        .excerptText h3 {
+            margin-top: 0;
+        }
     }
 
     .excerptImage img {
-        width: 225px;
+        max-width: 100%;
+        height: auto;
     }
+
 </style>
 
 {% for page in pages %}
