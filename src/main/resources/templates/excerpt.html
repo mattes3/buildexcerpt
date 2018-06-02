@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>This is a test!</title>
+</head>
+
+<body>
+
+<style>
+    .excerptContainer {
+        display: flex;
+        flex-direction: row;
+        margin-top: 1rem;
+    }
+
+    .excerptText {
+        padding-left: 1rem;
+    }
+
+    .excerptText h3 {
+        margin-top: 0;
+    }
+
+    .excerptImage img {
+        width: 225px;
+    }
+</style>
+
+{% for page in pages %}
+<div class="excerptContainer">
+    <div class="excerptImage">
+        <img src="{{page.imageUrl}}" />
+    </div>
+    <div class="excerptText">
+        <h3>{{page.title}}</h3>
+        <p>{{page.description}}</p>
+        <p><a href="{{page.url}}">Read more</a></p>
+    </div>
+</div>
+
+{% endfor %}
+</body>
+</html>

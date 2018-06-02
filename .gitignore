@@ -1,0 +1,16 @@
+.env
+build/
+classes/
+.gradle
+.idea
+.tscache
+out
+*.iml
+*.ipr
+*.iws
+.env
+.DS_Store
+bin/
+node_modules/
+logs/
+/npm-debug.log
