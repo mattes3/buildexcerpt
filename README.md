@@ -29,3 +29,5 @@ will generate this:
             <p><a href="https://justaskusers.com/">Read more</a></p>
         </div>
     </div>
+
+The program does this by parsing the meta tags `og:title`, `og:image`, `og:description` and `og:url`.
