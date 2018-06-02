@@ -4,6 +4,7 @@ Reads several web pages and builds small HTML snippets with excerpts, to be used
 
 Example:
 
+    ./gradlew installDist
     ./build/install/buildexcerpt/bin/buildexcerpt https://www.interaction-design.org/literature/article/how-to-visualize-your-qualitative-user-research-results-for-maximum-impact https://justaskusers.com
 
 will generate this:
